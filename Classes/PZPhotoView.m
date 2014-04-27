@@ -243,6 +243,7 @@
 - (void)handleDoubleTap:(UIGestureRecognizer *)gestureRecognizer {
     NSUInteger scale = [self formatFloat:self.zoomScale];
     NSUInteger maxscale = [self formatFloat:self.maximumZoomScale];
+    
     if (scale== maxscale) {
         // jump back to minimum scale
         [self updateZoomScaleWithGesture:gestureRecognizer newScale:self.minimumZoomScale];
@@ -384,6 +385,9 @@
     NSUInteger scale = [self formatFloat:newScale];
     NSUInteger maxscale = [self formatFloat:self.maximumZoomScale];
     NSUInteger minscale = [self formatFloat:self.minimumZoomScale];
+#pragma unused(maxscale)
+#pragma unused(scale)
+#pragma unused(minscale)
     NSAssert(scale >= minscale, @"Invalid State");
     NSAssert(scale <= maxscale, @"Invalid State");
 
@@ -397,6 +401,9 @@
     NSUInteger sscale = [self formatFloat:scale];
     NSUInteger maxscale = [self formatFloat:self.maximumZoomScale];
     NSUInteger minscale = [self formatFloat:self.minimumZoomScale];
+#pragma unused(maxscale)
+#pragma unused(sscale)
+#pragma unused(minscale)
     NSAssert(sscale >= minscale, @"Invalid State");
     NSAssert(sscale <= maxscale, @"Invalid State");
     

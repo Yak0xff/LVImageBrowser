@@ -253,6 +253,7 @@
 
 - (void)resetDisplay {
     NSUInteger count = [self.pagingViewDelegate pagingScrollViewPagingViewCount:self];
+#pragma unused(count)
     NSAssert(_currentPagingIndex < count, @"Invalid State");
     CGSize size = [self contentSizeForPagingScrollView];
     self.contentSize = size;
