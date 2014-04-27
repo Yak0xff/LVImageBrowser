@@ -182,28 +182,6 @@
     }
 }
 
-#pragma mark - Layout Debugging Support
-#pragma mark -
-
-- (void)logRect:(CGRect)rect withName:(NSString *)name {
-    DebugLog(@"%@: %f, %f / %f, %f", name, rect.origin.x, rect.origin.y, rect.size.width, rect.size.height);
-}
-
-- (void)logLayout {
-    DebugLog(@"#### PZPagingScrollView ###");
-    
-    [self logRect:self.bounds withName:@"self.bounds"];
-    [self logRect:self.frame withName:@"self.frame"];
-    
-    DebugLog(@"contentSize: %f, %f", self.contentSize.width, self.contentSize.height);
-    DebugLog(@"contentOffset: %f, %f", self.contentOffset.x, self.contentOffset.y);
-    DebugLog(@"contentInset: %f, %f, %f, %f", self.contentInset.top, self.contentInset.right, self.contentInset.bottom, self.contentInset.left);
-    
-    if ([self.visiblePageView respondsToSelector:@selector(logLayout)]) {
-        [self.visiblePageView performSelector:@selector(logLayout)];
-    }
-}
-
 #pragma mark - Reuse Queue
 #pragma mark -
 

@@ -13,7 +13,12 @@ Pod::Spec.new do |s|
   s.author           = { "CodeEagle" => "stasura@hotmail.com" }
   s.source           = { :git => "https://github.com/CodeEagle/LVImageBrowser.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/_SelfStudio'
-  s.platform     = :ios
+  s.platform     = :ios , 6.0
+  s.ios.deployment_target = '6.0'
   s.requires_arc = true
   s.source_files = 'Classes/*.{h,m}'
+  s.dependency 'LVUtils'
+  s.dependency 'NSTimer-Blocks' 
+  s.dependency 'Masonry'
+  s.dependency 'SDWebImage'
 end
