@@ -21,6 +21,7 @@
 // Disables log messages when debugging is turned off
 #ifndef NDEBUG
 
+#define DEBUG_LOGS 1
 #define DebugLog(message, ...) NSLog(@"%s: " message, __PRETTY_FUNCTION__, ##__VA_ARGS__)
 
 #else
