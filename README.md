@@ -5,13 +5,13 @@
 
 
 ##Screenshot
-![Screenshot1](https://github.com/CodeEagle/LVImageBrowser/1.png "Example of LVImageBrowser")
+![Screenshot1](https://raw.github.com/CodeEagle/LVImageBrowser/master/1.png "Example of LVImageBrowser")
 
-![Screenshot2](https://github.com/CodeEagle/LVImageBrowser/2.png "Example of LVImageBrowser")
+![Screenshot2](https://raw.github.com/CodeEagle/LVImageBrowser/master/2.png "Example of LVImageBrowser")
 
-![Screenshot3](https://github.com/CodeEagle/LVImageBrowser/3.png "Example of LVImageBrowser")
+![Screenshot3](https://raw.github.com/CodeEagle/LVImageBrowser/master/3.png "Example of LVImageBrowser")
 
-![Screenshot4](https://github.com/CodeEagle/LVImageBrowser/4.png "Example of LVImageBrowser")
+![Screenshot4](https://raw.github.com/CodeEagle/LVImageBrowser/master/4.png "Example of LVImageBrowser")
 
 ## Usage
 
